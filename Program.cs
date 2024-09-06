@@ -39,7 +39,5 @@ static bool trueName(string? input){
         playAgain = false;
         Console.WriteLine("See you next time.");
     }
-
-
 }
 
