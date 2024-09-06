@@ -7,8 +7,8 @@
 
 **Date**: 9/6/24
 
-### Peer Review:
+### Peer Review: 
 
-**Name**:
+**Name**: Alexander Soria
 
-**Comments**:
+**Comments**: The project works as intended; it asks you for your name, and will return an error if the name doesn't solely include letters, asking the user to try again. Otherwise, the program will greet you with the name inputted and then ask you if you'd like to do it again. 
