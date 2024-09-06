@@ -34,6 +34,7 @@ static bool trueName(string? input){
     string? userAnswer = Console.ReadLine();
     userAnswer = userAnswer?.ToLower();
     if(userAnswer == "yes"){
+        Console.Clear();
         Console.WriteLine("Let's try this again!");
     }else{
         playAgain = false;
