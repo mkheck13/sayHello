@@ -1,32 +1,4 @@
 ﻿
-
-
-
-
-
-// using System.Diagnostics;
-
-// Console.Clear();
-
-// bool playAgain = true;
-// string breakpoint = "<--------------------------------------------------------------------------->";
-
-// while (playAgain){
-//     Console.WriteLine(breakpoint);
-    
-//     Console.WriteLine("Please enter your name using only the alphabet.");
-
-//     bool success = 
-
-//     if(!success){
-//         Console.WriteLine("Please only use letters from the alphabet.");
-//         Console.WriteLine("Let's try that again.");
-//     }
-
-// }
-
-
-
 Console.Clear();
 
 bool playAgain = true;
