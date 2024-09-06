@@ -32,7 +32,7 @@ static bool trueName(string? input){
     Console.WriteLine("Do you want to try again?");
     Console.WriteLine("Type yes to try again or hit any key to exit");
     string? userAnswer = Console.ReadLine();
-    userAnswer = userAnswer.ToLower();
+    userAnswer = userAnswer?.ToLower();
     if(userAnswer == "yes"){
         Console.WriteLine("Let's try this again!");
     }else{
