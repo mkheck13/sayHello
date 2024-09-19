@@ -3,34 +3,43 @@ Console.Clear();
 
 bool playAgain = true;
 
-while(playAgain){
+while (playAgain)
+{
     string? name;
 
-static bool trueName(string? input){
-    if(string.IsNullOrEmpty(input)){
-        return false;
-    }
-    foreach(char b in input){
-        if(!char.IsLetter(b) && b != ' '){
+    static bool trueName(string? input)
+    {
+        if (string.IsNullOrEmpty(input))
+        {
             return false;
         }
+        foreach (char b in input)
+        {
+            if (!char.IsLetter(b) && b != ' ')
+            {
+                return false;
+            }
+        }
+        return true;
     }
-    return true;
-    }
-    while(true){
+    while (true)
+    {
         Console.WriteLine("Please enter your name using only the alphabet.");
         name = Console.ReadLine();
 
-        if(trueName(name)){
+        if (trueName(name))
+        {
             Console.WriteLine($"Hello {name}, it's nice to meet you!");
             break;
-        }else{
+        }
+        else
+        {
             Console.WriteLine("Please only use letters from the alphabet.");
             break;
         }
     }
-    
-     Console.WriteLine("Would you like to play again?");
+
+    Console.WriteLine("Would you like to play again?");
     Console.WriteLine("Type 'yes' to play again or 'no' to exit");
 
     bool yesNo = true;
