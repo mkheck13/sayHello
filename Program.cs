@@ -29,16 +29,31 @@ static bool trueName(string? input){
             break;
         }
     }
-    Console.WriteLine("Do you want to try again?");
-    Console.WriteLine("Type yes to try again or hit any key to exit");
-    string? userAnswer = Console.ReadLine();
-    userAnswer = userAnswer?.ToLower();
-    if(userAnswer == "yes"){
-        Console.Clear();
-        Console.WriteLine("Let's try this again!");
-    }else{
-        playAgain = false;
-        Console.WriteLine("See you next time.");
+    
+     Console.WriteLine("Would you like to play again?");
+    Console.WriteLine("Type 'yes' to play again or 'no' to exit");
+
+    bool yesNo = true;
+
+    while (yesNo == true)
+    {
+        string userPlay = Console.ReadLine()!.Trim().ToLower();
+        if (userPlay == "yes" || userPlay == "y")
+        {
+            Console.WriteLine("Let's go again!");
+            yesNo = false;
+        }
+        else if (userPlay == "no" || userPlay == "n")
+        {
+            Console.WriteLine("See you next time.");
+            yesNo = false;
+            playAgain = false;
+        }
+        else
+        {
+            Console.Clear();
+            Console.WriteLine("That was not a yes or no. Try again.");
+        }
     }
 }
 
